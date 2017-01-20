@@ -1,4 +1,4 @@
-const int RS485_Direction = 8;     // the number of the RS485 control direction (TX/RX)
+const int RS485_Direction = 8;     // the pin of the RS485 control direction (TX/RX)
 
 void setup() {  
   Serial.begin(9600);  // initialize serial at 9600
