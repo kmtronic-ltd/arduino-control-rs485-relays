@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-const int RS485_Direction = 8;     // the number of the RS485 control direction (TX/RX)
+const int RS485_Direction = 8;     // the pin of the RS485 control direction (TX/RX)
 SoftwareSerial mySerial(2, 3); // RX, TX
 
 void setup()
