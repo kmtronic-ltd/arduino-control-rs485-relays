@@ -1,11 +1,13 @@
 #include <SoftwareSerial.h>
-
+const int RS485_Direction = 8;     // the number of the RS485 control direction (TX/RX)
 SoftwareSerial mySerial(2, 3); // RX, TX
 
 void setup()
 {
   // set the data rate for the SoftwareSerial port
   mySerial.begin(9600);
+  pinMode(RS485_Direction,OUTPUT); //set pin to output for RS485 control direction (TX/RX)
+  digitalWrite(RS485_Direction, HIGH); // set to HIGH level for Transmiting data ( LOW for receive)  
 }
 
 void loop() // run over and over
